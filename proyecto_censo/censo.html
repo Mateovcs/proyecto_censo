@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brecha de Género Educativa | Censo 2022</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Librería para renderizar gráficos profesionales -->
+    <script src="https://jsdelivr.net"></script>
+</head>
+<body class="censo-page">
+
+    <header class="navbar">
+        <div class="nav-container">
+            <span class="badge-tech">Datos Abiertos INDEC</span>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <section class="dashboard-header">
+            <h1>Brecha de Género en la Educación Superior</h1>
+            <p class="subtitle">Análisis comparativo del nivel máximo alcanzado entre varones y mujeres según el Censo Nacional 2022.</p>
+            <div class="meta-info">
+                <span><strong>Fuente:</strong> INDEC, República Argentina (REDATAM)</span>
+                <span><strong>Muestra:</strong> Población en viviendas particulares</span>
+            </div>
+        </section>
+
+        <section class="dashboard-content">
+            <div class="chart-box">
+                <div style="position: relative; height:300px; width:100%;">
+                    <canvas id="graficoEducacion"></canvas>
+                </div>
+            </div>
+
+            <div class="analysis-box">
+                <h3>Hallazgos Clave</h3>
+                <p>Los datos demuestran un fenómeno global conocido como la "feminización de la matrícula superior". En Argentina, las mujeres superan ampliamente a los varones en la obtención de títulos de grado y pregrado.</p>
+                <div class="metric-card">
+                    <span class="metric-value">+38%</span>
+                    <span class="metric-label">De mujeres profesionales graduadas en comparación con los varones.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 MiPortfolio. Diseñado con estándares profesionales.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
